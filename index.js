@@ -64,7 +64,7 @@ class LiveDepartureBoardService {
     return new Promise((resolve, reject) => {
       parseString(body, {
         tagNameProcessors: [stripNS],
-        explicitArray : false,
+        explicitArray : true,
         ignoreAttrs : true
       }, function(err, result){
         if(!err){
@@ -84,7 +84,7 @@ class LiveDepartureBoardService {
     return new Promise((resolve, reject) => {
       parseString(body, {
         tagNameProcessors: [stripNS],
-        explicitArray : false,
+        explicitArray : true,
         ignoreAttrs : false
       }, function(err, result){
         if(!err){
